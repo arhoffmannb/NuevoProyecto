@@ -26,26 +26,33 @@ public class Zombie extends Objeto{
 
     public int aleatorioSimplificado() {
         Random random = new Random();
-        return random.nextInt(2);
+        return random.nextInt(3);
     }
 
     public void Draw(Graphics g){
 
 
-        if(b == 1){
+        if(b == 0){
             try{
-                zombie = ImageIO.read(new File("C:/Users/Raquel/Desktop/Tareas/USAC/IPC1/Proyecto/Images/Zombie 1/zombie1.gif"));
+                zombie = ImageIO.read(new File("C:/Users/Raquel/Desktop/Tareas/USAC/IPC1/NuevoProyecto/Images/zombie1.jpg"));
             } catch(IOException ie){
                 System.out.print("No Zombie");
             }
 
 
-        } else {
+        } else if(b == 1) {
             try{
-                zombie = ImageIO.read(new File("C:/Users/Raquel/Desktop/Tareas/USAC/IPC1/Proyecto/Images/Zombie 3/zombie3.gif"));
+                zombie = ImageIO.read(new File("C:/Users/Raquel/Desktop/Tareas/USAC/IPC1/NuevoProyecto/Images/zombie2.jpg"));
             } catch(IOException ie){
                 System.out.print("No Zombie");
             }
+        } else if(b == 2) {
+            try{
+                zombie = ImageIO.read(new File("C:/Users/Raquel/Desktop/Tareas/USAC/IPC1/NuevoProyecto/Images/zombie3.jpg"));
+            } catch(IOException ie){
+                System.out.print("No Zombie");
+            }
+
         }
 
         g.drawImage(zombie,posX,posY,null);

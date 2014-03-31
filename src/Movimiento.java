@@ -16,8 +16,8 @@ public class Movimiento extends JPanel implements Runnable{
 
     public Movimiento(){
 
-        zombie1 = new Zombie(this,0,350,velocidad1);
-        zombie2 = new Zombie(this,0,190,velocidad2);
+        zombie1 = new Zombie(this,0,190,velocidad1);
+        zombie2 = new Zombie(this,0,350,velocidad2);
         zombie3 = new Zombie(this,0,510,velocidad2);
 
     }
@@ -77,7 +77,7 @@ public class Movimiento extends JPanel implements Runnable{
     public void update(Graphics g){
 
         try{
-            fondo = ImageIO.read(new File("C:/Users/Raquel/Desktop/Tareas/USAC/IPC1/Proyecto/Images/Fondo.jpg"));
+            fondo = ImageIO.read(new File("C:/Users/Raquel/Desktop/Tareas/USAC/IPC1/NuevoProyecto/Images/Fondo.jpg"));
         } catch(IOException ie){
             System.out.print("No fondo");
         }

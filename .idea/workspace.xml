@@ -64,10 +64,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Movimiento.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Movimiento.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Movimiento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="28" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="948" max-vertical-offset="1802">
+            <state line="20" column="38" selection-start="529" selection-end="529" vertical-scroll-proportion="0.42570952" vertical-offset="0" max-vertical-offset="1802">
               <folding />
             </state>
           </provider>
@@ -76,16 +76,16 @@
       <file leaf-file-name="Objeto.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Objeto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="16" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="544">
+            <state line="5" column="16" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Zombie.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Zombie.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Zombie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="17" selection-start="411" selection-end="411" vertical-scroll-proportion="0.36894825" vertical-offset="0" max-vertical-offset="986">
+            <state line="50" column="117" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1105">
               <folding />
             </state>
           </provider>
@@ -94,7 +94,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391">
+            <state line="17" column="0" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
               <folding />
             </state>
           </provider>
@@ -113,8 +113,8 @@
         <option value="$PROJECT_DIR$/src/Zombie1.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Objeto.java" />
-        <option value="$PROJECT_DIR$/src/Movimiento.java" />
         <option value="$PROJECT_DIR$/src/Zombie.java" />
+        <option value="$PROJECT_DIR$/src/Movimiento.java" />
       </list>
     </option>
   </component>
@@ -365,7 +365,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -442,13 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Objeto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
@@ -456,16 +449,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Movimiento.java">
+    <entry file="file://$PROJECT_DIR$/src/Objeto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="28" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="948" max-vertical-offset="1802">
+        <state line="5" column="16" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Zombie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="17" selection-start="411" selection-end="411" vertical-scroll-proportion="0.36894825" vertical-offset="0" max-vertical-offset="986">
+        <state line="50" column="117" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Movimiento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="38" selection-start="529" selection-end="529" vertical-scroll-proportion="0.42570952" vertical-offset="0" max-vertical-offset="1802">
           <folding />
         </state>
       </provider>
