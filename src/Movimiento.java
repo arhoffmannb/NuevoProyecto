@@ -10,15 +10,17 @@ public class Movimiento extends JPanel implements Runnable{
 
     public BufferedImage fondo;
     public Zombie zombie1, zombie2, zombie3;
-    float velocidad1 = this.Velocidad1();
+    float  velocidad1 = this.Velocidad1();
     float velocidad2 = this.Velocidad2();
+    float velocidad3 = this.Velocidad3();
+
 
 
     public Movimiento(){
 
         zombie1 = new Zombie(this,0,190,velocidad1);
         zombie2 = new Zombie(this,0,350,velocidad2);
-        zombie3 = new Zombie(this,0,510,velocidad2);
+        zombie3 = new Zombie(this,0,510,velocidad3);
 
     }
 
@@ -68,6 +70,29 @@ public class Movimiento extends JPanel implements Runnable{
         return velocidad;
     }
 
+    float Velocidad3(){
+
+        float velocidad = 0;
+
+        Random random = new Random();
+        velocidad = random.nextInt(3);
+
+
+        if(velocidad==0){
+
+            velocidad = 15;
+
+        }else if(velocidad == 2){
+            velocidad = 20;
+
+        } else {
+            velocidad = 25;
+
+        }
+
+        return velocidad;
+    }
+
 
 
     public void paint(Graphics g){
@@ -90,16 +115,20 @@ public class Movimiento extends JPanel implements Runnable{
     }
 
     public void run(){
+
         while(true){
             zombie1.Update();
             zombie2.Update();
             zombie3.Update();
+
+
 
             try{
                 Thread.sleep(80);
             }catch (InterruptedException ie){
                 System.out.print("Hola");
             }
+
         }
     }
 }

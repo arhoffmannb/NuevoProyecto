@@ -8,7 +8,7 @@ import java.util.Random;
 public class Zombie extends Objeto{
 
     BufferedImage zombie;
-    float b = this.aleatorioSimplificado();
+    float aleatorio = this.Aleatorio();
 
 
 
@@ -21,18 +21,20 @@ public class Zombie extends Objeto{
 
     public void Update(){
         posY += dirY;
+
+
     }
 
 
-    public int aleatorioSimplificado() {
+    public int Aleatorio() {
         Random random = new Random();
-        return random.nextInt(3);
+        return random.nextInt(4);
     }
 
     public void Draw(Graphics g){
 
 
-        if(b == 0){
+        if(aleatorio == 0){
             try{
                 zombie = ImageIO.read(new File("C:/Users/Raquel/Desktop/Tareas/USAC/IPC1/NuevoProyecto/Images/zombie1.jpg"));
             } catch(IOException ie){
@@ -40,15 +42,21 @@ public class Zombie extends Objeto{
             }
 
 
-        } else if(b == 1) {
+        } else if(aleatorio == 1) {
             try{
                 zombie = ImageIO.read(new File("C:/Users/Raquel/Desktop/Tareas/USAC/IPC1/NuevoProyecto/Images/zombie2.jpg"));
             } catch(IOException ie){
                 System.out.print("No Zombie");
             }
-        } else if(b == 2) {
+        } else if(aleatorio == 2) {
             try{
                 zombie = ImageIO.read(new File("C:/Users/Raquel/Desktop/Tareas/USAC/IPC1/NuevoProyecto/Images/zombie3.jpg"));
+            } catch(IOException ie){
+                System.out.print("No Zombie");
+            }
+        } else if(aleatorio == 3) {
+            try{
+                zombie = ImageIO.read(new File("C:/Users/Raquel/Desktop/Tareas/USAC/IPC1/NuevoProyecto/Images/zombie4.jpg"));
             } catch(IOException ie){
                 System.out.print("No Zombie");
             }
