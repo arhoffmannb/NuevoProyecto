@@ -6,7 +6,7 @@ import java.io.*;
 import java.util.Random;
 
 
-public class Movimiento extends JPanel implements Runnable{
+public class Movimiento extends JPanel implements Runnable {
 
     public BufferedImage fondo;
     public Zombie zombie1, zombie2, zombie3;
