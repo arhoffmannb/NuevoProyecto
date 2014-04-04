@@ -1,25 +1,30 @@
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.image.*;
-import java.io.*;
-import javax.imageio.*;
-import javax.swing.*;
+import javax.imageio.ImageIO;
+import java.awt.Graphics;
+import java.awt.event.KeyEvent;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.util.Random;
 
-public class Jugador extends JPanel implements KeyListener{
-    int posicionX = 350;
-    BufferedImage jugador, fondo;
-    Graphics g;
+public class Humano extends Objeto{
+    BufferedImage jugador;
+    public int direccionX = 0;
 
+    public Humano(Movimiento m, int y, int x){
+        movimiento = m;
+        posicionY = y;
+        posicionX = x;
 
-
-    public void paint(Graphics g){
-        update(g);
 
     }
 
-    public void update(Graphics g){
+    public void Update(){
+        posicionX += direccionX;
 
-        g.drawImage(fondo,0,0,null);
+
+    }
+
+    public void Draw(Graphics g){
 
 
         if((posicionX==30)||(posicionX==670)){
@@ -37,40 +42,42 @@ public class Jugador extends JPanel implements KeyListener{
         }
 
 
-
         g.drawImage(jugador,posicionX,370,null);
-        repaint();
+
+
 
     }
 
-    @Override
+
     public void keyPressed(KeyEvent flecha){
         if(flecha.getKeyCode()==39){
             if(posicionX==670){
-                posicionX = 670;
+                direccionX = 0;
             }else{
-                posicionX = posicionX + 160;
+                direccionX = 160;
             }
 
 
         } else if(flecha.getKeyCode()==37){
             if(posicionX==30){
-                posicionX = 30;
+                direccionX = 0;
             }else{
-                posicionX = posicionX - 160;
+                direccionY = - 160;
             }
         }
 
     }
 
-    @Override
+
     public void keyReleased(KeyEvent flecha){
 
     }
 
-    @Override
+
     public void keyTyped(KeyEvent flecha){
 
     }
-}
 
+
+
+}

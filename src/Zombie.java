@@ -9,20 +9,27 @@ public class Zombie extends Objeto{
 
     BufferedImage zombie;
     float aleatorio = this.Aleatorio();
+    private int posicionActual = 0;
+
 
 
 
     public Zombie(Movimiento m, int y, int x, float s){
         movimiento = m;
-        posY = y;
-        posX = x;
-        dirY = s;
+        posicionY = y;
+        posicionX = x;
+        direccionY = s;
     }
 
     public void Update(){
-        posY += dirY;
+        posicionY += direccionY;
 
 
+    }
+
+    public int getPosicion(){
+        posicionActual = posicionY;
+        return posicionActual;
     }
 
 
@@ -63,10 +70,12 @@ public class Zombie extends Objeto{
 
         }
 
-        g.drawImage(zombie,posX,posY,null);
-
+        g.drawImage(zombie,posicionX,posicionY,null);
 
 
 
     }
+
+
+
 }
